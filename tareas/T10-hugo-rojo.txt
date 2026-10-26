@@ -1,3 +1,2 @@
-Alumno: Hugo Rojo
-Tarea: T10 - Product Backlog en Trello y plan del Sprint 1
-Rama: feature/T10-hugo (sale de development)
+Hugo Rojo
+T10 - Product Backlog en Trello y plan del Sprint 1
