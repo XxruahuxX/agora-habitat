@@ -1,3 +1,5 @@
 Sprint 1
 Soy Jesús Guinea
 He hecho el mockup de las ventanas y del perfil principal del usuario
+Modificación del Trello y Product backlog
+Revisión final y exportación de los 3 PDF
