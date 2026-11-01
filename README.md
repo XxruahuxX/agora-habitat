@@ -22,9 +22,6 @@ Héctor Muñoz · Hugo Rojo · Jesús Guinea · Pablo Molina
 |---|---|
 | Sprint 1 · Anteproyecto (19–30 oct) | Análisis, requisitos, presupuesto, product backlog, Gantt y mockups |
 | Sprint 2 (2–13 nov) | Proyecto Flet, UML, login, registro, modelo JSON, datos y sombrillas |
-| Sprint 3 | Farolas, aparcamiento, socorrista, reservas, alertas y administrador |
-| Sprint 4 | Estética, históricos, responsive, pruebas y portabilidad |
-| Cierre | Memoria, presentación y demo |
 
 Fechas detalladas en el Gantt.
 
