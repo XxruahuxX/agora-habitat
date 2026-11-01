@@ -1,2 +1,8 @@
 Hugo Rojo
 T10 - Product Backlog en Trello y plan del Sprint 1
+
+Tareas del primer sprint:
+
+Modificación del Trello y Product backlog
+
+Revisión final y exportación de los 3 PDF
