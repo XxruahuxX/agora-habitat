@@ -18,15 +18,13 @@ Metodología Scrum. 19 oct 2026 – 8 ene 2027. 6 fases de 2 semanas.
 ## Listas (izquierda a derecha)
 
 1. Product Backlog
-2. Fase 1 · Anteproyecto (19–30 oct)
-3. Sprint 1 · Base de la aplicación (2–13 nov)
-4. Sprint 2 · Sensores de la playa (16–27 nov)
-5. Sprint 3 · Supervisión y análisis (30 nov–11 dic)
-6. Sprint 4 · Acabado y pruebas (14–25 dic)
-7. Fase 6 · Cierre y entrega (28 dic–8 ene)
-8. En curso
-9. En revisión
-10. Hecho
+2. Sprint 1 · Anteproyecto (19–30 oct)
+3. Sprint 2 · Base de la aplicación y primer sensor (2–13 nov)
+4. Sprint 3 · Sensores y vistas por rol (16–27 nov)
+5. Sprint 4 · Supervisión, pruebas y entrega (30 nov–11 dic)
+6. En curso
+7. En revisión
+8. Hecho
 
 Flujo: la tarjeta sale de su lista de fase a «En curso», luego «En revisión» y «Hecho».
 
@@ -54,7 +52,7 @@ Flujo: la tarjeta sale de su lista de fase a «En curso», luego «En revisión�
 | HU16 Vista móvil | 1280 px y 390 px · Barra lateral → navegación inferior · Tarjetas en una columna |
 | HU17 Coherencia estética | Paleta (#0B6E99, #2FB8B0, #F0664A, #F1E2C6, #0B2A43, #FBF8F1) · Logo en menú lateral · Nombre y rol en cabecera · Montserrat + Open Sans |
 
-## 2. Fase 1 · Anteproyecto
+## 2. Sprint 1 · Anteproyecto (Actividad 3) 19 oct 30 oct
 
 | # | Tarjeta | Responsable | Inicio | Vence |
 |---|---|---|---|---|
@@ -69,7 +67,7 @@ Flujo: la tarjeta sale de su lista de fase a «En curso», luego «En revisión�
 | 9 | Revisión final y exportación de los 3 PDF | Equipo | 29 oct | 30 oct |
 | ◆ | Hito: Entrega Actividad 3 | Hito | | 30 oct |
 
-## 3. Sprint 1 · Base de la aplicación
+## 3. Sprint 2 · Base de la aplicación y primer sensor 2 nov 13 nov
 
 | # | Tarjeta | Responsable | Inicio | Vence |
 |---|---|---|---|---|
@@ -78,52 +76,40 @@ Flujo: la tarjeta sale de su lista de fase a «En curso», luego «En revisión�
 | 12 | Login, registro y una vista por rol (HU01, HU02) | Héctor | 5 nov | 13 nov |
 | 13 | Modelo y gestor de ficheros JSON | Pablo | 5 nov | 13 nov |
 | 14 | Datos realistas: usuarios, zonas y sensores | Jesús | 9 nov | 13 nov |
+|    |Sombrillas: viento y cierre automático | Hugo | 9 nov | 13 nov |
 | ◆ | Hito: Review Sprint 1 | Hito | | 13 nov |
 
-## 4. Sprint 2 · Sensores de la playa
+## 4. Sprint 3 · Sensores y vistas por rol 16 nov 27 nov
 
 | # | Tarjeta | Responsable | Inicio | Vence |
 |---|---|---|---|---|
-| 15 | Sombrillas: viento y cierre automático (HU05, HU10) | Hugo | 16 nov | 27 nov |
 | 16 | Farolas: luz y encendido automático | Héctor | 16 nov | 27 nov |
 | 17 | Aparcamiento: plazas libres y ocupadas (HU03, HU06) | Pablo | 16 nov | 27 nov |
-| 18 | Vista del socorrista: estado de la playa (HU08) | Jesús | 18 nov | 27 nov |
+| 18 | Vista del administrado | Hugo y Pablo | 18 nov | 27 nov |
+| 19 | Vista del encargado de zona(socorrista) | Jesús | 18 nov | 27 nov |
+| 20 | Vista del usuario | Hector | 18 nov | 27 nov |
+| 21 | Alertas y averías de sensores | Hector | 18 nov | 27 nov |
 | ◆ | Hito: Review Sprint 2 | Hito | | 27 nov |
 
-## 5. Sprint 3 · Supervisión y análisis
+## 5. Sprint 4 · Supervisión, pruebas y entrega 30 nov 11 dic
 
 | # | Tarjeta | Responsable | Inicio | Vence |
 |---|---|---|---|---|
-| 19 | Vista del administrador: panel, umbrales, usuarios y reservas (HU11–HU14) | Héctor | 30 nov | 11 dic |
-| 20 | Históricos y gráficas (HU15) | Pablo | 30 nov | 11 dic |
-| 21 | Alertas y banderas (HU09) | Hugo | 2 dic | 11 dic |
-| 22 | Nombre y rol en cada vista, logo y estética (HU17) | Jesús | 30 nov | 9 dic |
-| ◆ | Hito: Review Sprint 3 | Hito | | 11 dic |
+| 22 | Nombre y rol en cada vista, logo y estética | Jesús | 30 nov | 10 dic |
+| 22 | Formulario de sugerencias | Héctor | 30 nov | 10 dic |
+| 24 | Diseño responsive en varias resoluciones | Héctor | 2 dic | 11 dic |
+| 25 | Plan de pruebas y correccion de errores | Hugo | 30 nov | 11 dic |
+| 26 | Revisión de portabilidad en PyCharm | Pablo | 30 nov | 11 dic |
+| 27 | Memoria final (plantilla UEM) | Pablo | 30 nov | 11 dic |
+| 28 | Presentación y demo | Jesús | 30 nov | 11 dic |
+| 29 | Revisión de calidad del código y la memoria | Equipo | 30 nov | 11 dic |
+| ◆ | Hito: Review Sprint 4 | Hito | | 11 dic |
 
-## 6. Sprint 4 · Acabado y pruebas
 
-| # | Tarjeta | Responsable | Inicio | Vence |
-|---|---|---|---|---|
-| 23 | Diseño responsive en varias resoluciones (HU16) | Jesús | 14 dic | 25 dic |
-| 24 | Plan de pruebas y corrección de errores | Hugo | 14 dic | 25 dic |
-| 25 | Formulario de sugerencias | Héctor | 14 dic | 18 dic |
-| 26 | Revisión de portabilidad en PyCharm | Pablo | 21 dic | 25 dic |
-| ◆ | Hito: Review Sprint 4 | Hito | | 25 dic |
-
-## 7. Fase 6 · Cierre y entrega
-
-| # | Tarjeta | Responsable | Inicio | Vence |
-|---|---|---|---|---|
-| 27 | Memoria final (plantilla UEM) | Pablo | 28 dic | 7 ene |
-| 28 | Presentación y demo | Jesús | 30 dic | 8 ene |
-| 29 | Revisión de calidad del código y la memoria | Equipo | 4 ene | 8 ene |
-| ◆ | Hito: Entrega final | Hito | | 8 ene |
-
-## 8. En curso (tareas transversales)
+## 6. En curso (tareas transversales)
 
 | # | Tarjeta | Responsable | Periodo |
 |---|---|---|---|
 | 30 | Reunión semanal y acta | Equipo | 19 oct – 8 ene (repetir cada semana) |
 | 31 | Tablero Trello y Sprint Backlog | Hugo | 19 oct – 8 ene |
 
-Además, a 23 oct, mover aquí las tarjetas 4, 7 y 8 de la Fase 1.
