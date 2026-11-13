@@ -1,0 +1,8 @@
+{
+  "umbral_viento_kmh": 50,
+  "pct_amarilla": 60,
+  "pct_roja": 80,
+  "pct_roja_auto": 100,
+  "aforo_maximo": 300,
+  "umbral_luz_lux": 50
+}

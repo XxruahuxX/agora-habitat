@@ -1,0 +1,32 @@
+[
+  {
+    "id": "s01",
+    "fila": 1,
+    "estado": "LIBRE"
+  },
+  {
+    "id": "s02",
+    "fila": 1,
+    "estado": "RESERVADA"
+  },
+  {
+    "id": "s03",
+    "fila": 1,
+    "estado": "LIBRE"
+  },
+  {
+    "id": "s04",
+    "fila": 2,
+    "estado": "CERRADA"
+  },
+  {
+    "id": "s05",
+    "fila": 2,
+    "estado": "LIBRE"
+  },
+  {
+    "id": "s06",
+    "fila": 2,
+    "estado": "LIBRE"
+  }
+]
