@@ -1,0 +1,152 @@
+[
+  {
+    "idPlaza": 1,
+    "numeroPlaza": "A01",
+    "idZona": 3,
+    "estado": "OCUPADA",
+    "idUsuario": 3,
+    "fechaEntrada": "2026-11-06",
+    "horaEntrada": "09:00",
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 2,
+    "numeroPlaza": "A02",
+    "idZona": 3,
+    "estado": "OCUPADA",
+    "idUsuario": 4,
+    "fechaEntrada": "2026-11-06",
+    "horaEntrada": "09:30",
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 3,
+    "numeroPlaza": "A03",
+    "idZona": 3,
+    "estado": "RESERVADA",
+    "idUsuario": 5,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 4,
+    "numeroPlaza": "A04",
+    "idZona": 3,
+    "estado": "LIBRE",
+    "idUsuario": null,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 5,
+    "numeroPlaza": "A05",
+    "idZona": 3,
+    "estado": "OCUPADA",
+    "idUsuario": null,
+    "fechaEntrada": "2026-11-06",
+    "horaEntrada": "10:15",
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 6,
+    "numeroPlaza": "A06",
+    "idZona": 3,
+    "estado": "RESERVADA",
+    "idUsuario": 6,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 7,
+    "numeroPlaza": "A07",
+    "idZona": 3,
+    "estado": "OCUPADA",
+    "idUsuario": 7,
+    "fechaEntrada": "2026-11-06",
+    "horaEntrada": "10:45",
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 8,
+    "numeroPlaza": "A08",
+    "idZona": 3,
+    "estado": "LIBRE",
+    "idUsuario": null,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 9,
+    "numeroPlaza": "A09",
+    "idZona": 3,
+    "estado": "RESERVADA",
+    "idUsuario": 8,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 10,
+    "numeroPlaza": "A10",
+    "idZona": 3,
+    "estado": "OCUPADA",
+    "idUsuario": 9,
+    "fechaEntrada": "2026-11-06",
+    "horaEntrada": "11:00",
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 11,
+    "numeroPlaza": "A11",
+    "idZona": 3,
+    "estado": "LIBRE",
+    "idUsuario": null,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 12,
+    "numeroPlaza": "A12",
+    "idZona": 3,
+    "estado": "OCUPADA",
+    "idUsuario": 10,
+    "fechaEntrada": "2026-11-06",
+    "horaEntrada": "11:30",
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 13,
+    "numeroPlaza": "A13",
+    "idZona": 3,
+    "estado": "RESERVADA",
+    "idUsuario": 3,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 14,
+    "numeroPlaza": "A14",
+    "idZona": 3,
+    "estado": "LIBRE",
+    "idUsuario": null,
+    "fechaEntrada": null,
+    "horaEntrada": null,
+    "horaSalida": null
+  },
+  {
+    "idPlaza": 15,
+    "numeroPlaza": "A15",
+    "idZona": 3,
+    "estado": "OCUPADA",
+    "idUsuario": null,
+    "fechaEntrada": "2026-11-06",
+    "horaEntrada": "12:00",
+    "horaSalida": null
+  }
+]
