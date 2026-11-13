@@ -1,0 +1,14 @@
+[
+  {
+    "id": "f01",
+    "encendida": false
+  },
+  {
+    "id": "f02",
+    "encendida": false
+  },
+  {
+    "id": "f03",
+    "encendida": true
+  }
+]

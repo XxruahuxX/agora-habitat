@@ -1,0 +1,18 @@
+[
+  {
+    "id": "a001",
+    "hora": "2026-11-13T09:15:00",
+    "descripcion": "Viento por encima del umbral",
+    "nivel": "AMARILLA",
+    "origen": "SENSOR",
+    "autor_id": null
+  },
+  {
+    "id": "a002",
+    "hora": "2026-11-13T09:40:00",
+    "descripcion": "Oleaje fuerte en la zona norte",
+    "nivel": "ROJA",
+    "origen": "SOCORRISTA_MANUAL",
+    "autor_id": "u002"
+  }
+]

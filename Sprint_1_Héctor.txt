@@ -1,8 +1,16 @@
 Héctor Muñoz Palmero
 
+Tareas del primer sprint:
+
+Modificación del Trello y Product backlog
+
+Revisión final y exportación de los 3 PDF
+
 Estado del arte: playas y ciudades
 inteligentes
 
 Matriz de requisitos y descripción de la
 solución
+
+
 

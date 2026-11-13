@@ -1,205 +1,49 @@
 [
   {
-    "id": "R01",
-    "rol": "residente",
-    "nombre": "Lucía",
-    "apellidos": "Fernández Ortega",
-    "dni": "30548071T",
-    "telefono": "644417476",
-    "correo": "l.fernandez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque A, 2.º B, 11010 Cádiz",
-    "supervisores": [
-      "S01",
-      "S02"
-    ],
-    "analista": "A01"
+    "id": "u001",
+    "nombre": "Admin",
+    "apellidos": "Ágora Hábitat",
+    "dni": "00000000T",
+    "telefono": "600000001",
+    "correo": "admin@agorahabitat.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "ADMINISTRADOR"
   },
   {
-    "id": "R02",
-    "rol": "residente",
-    "nombre": "Antonio",
-    "apellidos": "García Ruiz",
-    "dni": "32299828P",
-    "telefono": "643554582",
-    "correo": "a.garcia@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque A, 3.º A, 11010 Cádiz",
-    "supervisores": [
-      "S01"
-    ],
-    "analista": "A02"
+    "id": "u002",
+    "nombre": "Ana",
+    "apellidos": "Torres Vega",
+    "dni": "87654321X",
+    "telefono": "600000002",
+    "correo": "ana.torres@agorahabitat.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "SOCORRISTA",
+    "torre": "Torre 1"
   },
   {
-    "id": "R03",
-    "rol": "residente",
-    "nombre": "Carmen",
-    "apellidos": "López Serrano",
-    "dni": "33075322B",
-    "telefono": "720119501",
-    "correo": "c.lopez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque B, 1.º C, 11010 Cádiz",
-    "supervisores": [
-      "S04"
-    ],
-    "analista": "A01"
+    "id": "u003",
+    "nombre": "Laura",
+    "apellidos": "García Pérez",
+    "dni": "12345678Z",
+    "telefono": "600000003",
+    "correo": "laura.garcia@correo.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": "1234BCD"
   },
   {
-    "id": "R04",
-    "rol": "residente",
-    "nombre": "Manuel",
-    "apellidos": "Jiménez Torres",
-    "dni": "34324790G",
-    "telefono": "666979119",
-    "correo": "m.jimenez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque B, 4.º A, 11010 Cádiz",
-    "supervisores": [
-      "S01",
-      "S03"
-    ],
-    "analista": "A02"
-  },
-  {
-    "id": "R05",
-    "rol": "residente",
-    "nombre": "Rosa",
-    "apellidos": "Martín Delgado",
-    "dni": "36895588T",
-    "telefono": "721783479",
-    "correo": "r.martin@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque C, Bajo B, 11010 Cádiz",
-    "supervisores": [
-      "S04"
-    ],
-    "analista": "A01"
-  },
-  {
-    "id": "R06",
-    "rol": "residente",
-    "nombre": "Francisco",
-    "apellidos": "Navarro Gil",
-    "dni": "37910734H",
-    "telefono": "748411144",
-    "correo": "f.navarro@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque C, 2.º A, 11010 Cádiz",
-    "supervisores": [
-      "S01"
-    ],
-    "analista": "A02"
-  },
-  {
-    "id": "R07",
-    "rol": "residente",
-    "nombre": "Isabel",
-    "apellidos": "Romero Castro",
-    "dni": "38506834G",
-    "telefono": "626189167",
-    "correo": "i.romero@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque A, 1.º A, 11010 Cádiz",
-    "supervisores": [
-      "S04"
-    ],
-    "analista": "A01"
-  },
-  {
-    "id": "R08",
-    "rol": "residente",
-    "nombre": "José",
-    "apellidos": "Vázquez Molina",
-    "dni": "41481493G",
-    "telefono": "686747766",
-    "correo": "j.vazquez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque B, 3.º B, 11010 Cádiz",
-    "supervisores": [
-      "S04"
-    ],
-    "analista": "A02"
-  },
-  {
-    "id": "R09",
-    "rol": "residente",
-    "nombre": "Pilar",
-    "apellidos": "Sánchez Ramos",
-    "dni": "44078977Y",
-    "telefono": "647637971",
-    "correo": "p.sanchez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71",
-    "direccion": "Paseo Marítimo 14, Bloque C, 4.º C, 11010 Cádiz",
-    "supervisores": [
-      "S04"
-    ],
-    "analista": "A01"
-  },
-  {
-    "id": "S01",
-    "rol": "supervisor",
-    "tipo": "Administrador de comunidad",
-    "nombre": "Javier",
-    "apellidos": "Morales Peña",
-    "dni": "46565921Y",
-    "telefono": "674970660",
-    "correo": "j.morales@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71"
-  },
-  {
-    "id": "S02",
-    "rol": "supervisor",
-    "tipo": "Familiar",
-    "nombre": "Marta",
-    "apellidos": "Fernández Gil",
-    "dni": "48123401H",
-    "telefono": "774548308",
-    "correo": "m.fernandez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71"
-  },
-  {
-    "id": "S03",
-    "rol": "supervisor",
-    "tipo": "Familiar",
-    "nombre": "Pilar",
-    "apellidos": "Jiménez Ortiz",
-    "dni": "50191609C",
-    "telefono": "716103400",
-    "correo": "p.jimenez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71"
-  },
-  {
-    "id": "S04",
-    "rol": "supervisor",
-    "tipo": "Administrador de comunidad",
-    "nombre": "Raúl",
-    "apellidos": "Domínguez Vera",
-    "dni": "52749654M",
-    "telefono": "785410230",
-    "correo": "r.dominguez@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71"
-  },
-  {
-    "id": "A01",
-    "rol": "analista",
-    "tipo": "Técnica ambiental",
-    "nombre": "Elena",
-    "apellidos": "Ruiz Campos",
-    "dni": "53814492N",
-    "telefono": "784233954",
-    "correo": "e.ruiz@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71"
-  },
-  {
-    "id": "A02",
-    "rol": "analista",
-    "tipo": "Técnico de eficiencia energética",
-    "nombre": "Sergio",
-    "apellidos": "Herrera Prieto",
-    "dni": "55461082D",
-    "telefono": "689283576",
-    "correo": "s.herrera@correo.es",
-    "clave": "40881ce2d952e4016ca8ef9c45e0ebbdc4a9f3102a37519c420360a0cf417c71"
+    "id": "u004",
+    "nombre": "Marcos",
+    "apellidos": "Ruiz López",
+    "dni": "11111111H",
+    "telefono": "600000004",
+    "correo": "marcos.ruiz@correo.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "BLOQUEADO",
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": null
   }
 ]

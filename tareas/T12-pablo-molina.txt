@@ -1,3 +1,8 @@
 Alumno: Pablo Molina
 Tarea: T12 - Referencias y citas
-Rama: feature/T12-pablo (sale de development)
+
+Tareas Hechas:
+Presupuesto: recursos y personal
+Contexto, problema y objetivos
+
+Revisión final y exportación de los 3 PDF
