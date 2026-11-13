@@ -45,5 +45,16 @@
     "estado": "BLOQUEADO",
     "rol": "USUARIO_REGISTRADO",
     "matricula": null
+  },
+  {
+    "id": "u005",
+    "nombre": "Hector",
+    "apellidos": "Muñoz Palmero",
+    "dni": "34343443434H",
+    "telefono": "233435435433",
+    "correo": "hector.munoz@correo.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO"
   }
 ]
