@@ -1,0 +1,25 @@
+[
+  {
+    "id": "se01",
+    "tipo": "VIENTO",
+    "ultima_lectura": "2026-11-13T10:00:00"
+  },
+  {
+    "id": "se02",
+    "tipo": "PRESENCIA",
+    "plaza_id": "p01",
+    "ultima_lectura": "2026-11-13T10:00:00"
+  },
+  {
+    "id": "se03",
+    "tipo": "PRESENCIA",
+    "plaza_id": "p03",
+    "ultima_lectura": "2026-11-13T10:00:00"
+  },
+  {
+    "id": "se04",
+    "tipo": "LUZ",
+    "farola_id": "f01",
+    "ultima_lectura": "2026-11-13T10:00:00"
+  }
+]

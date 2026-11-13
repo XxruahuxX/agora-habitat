@@ -1,0 +1,50 @@
+[
+  {
+    "id": "r001",
+    "tipo": "ACCESO",
+    "usuario_id": "u003",
+    "dia": "2026-11-14",
+    "estado": "CONFIRMADA",
+    "fecha_creacion": "2026-11-12T18:30:00",
+    "personas": 3,
+    "hora_prevista": "10:00",
+    "hora_real": null,
+    "hora_salida": null
+  },
+  {
+    "id": "r002",
+    "tipo": "APARCAMIENTO",
+    "usuario_id": "u003",
+    "dia": "2026-11-14",
+    "estado": "CONFIRMADA",
+    "fecha_creacion": "2026-11-12T18:32:00",
+    "plaza_id": "p01",
+    "matricula": "1234BCD",
+    "hora_llegada": "09:45",
+    "hora_entrada": null,
+    "hora_salida": null
+  },
+  {
+    "id": "r003",
+    "tipo": "SOMBRILLA",
+    "usuario_id": "u003",
+    "dia": "2026-11-14",
+    "estado": "PENDIENTE",
+    "fecha_creacion": "2026-11-12T18:35:00",
+    "sombrilla_id": "s02",
+    "desde": "10:00",
+    "hasta": "14:00"
+  },
+  {
+    "id": "r004",
+    "tipo": "ACCESO",
+    "usuario_id": "u004",
+    "dia": "2026-11-10",
+    "estado": "NO_PRESENTADA",
+    "fecha_creacion": "2026-11-08T12:00:00",
+    "personas": 2,
+    "hora_prevista": "11:00",
+    "hora_real": null,
+    "hora_salida": null
+  }
+]

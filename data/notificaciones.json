@@ -1,0 +1,16 @@
+[
+  {
+    "id": "n001",
+    "usuario_id": "u003",
+    "mensaje": "Tu reserva de acceso del 14/11 está confirmada.",
+    "fecha": "2026-11-12T18:31:00",
+    "leida": false
+  },
+  {
+    "id": "n002",
+    "usuario_id": "u003",
+    "mensaje": "Bandera amarilla por viento: las sombrillas pueden cerrarse.",
+    "fecha": "2026-11-13T09:15:00",
+    "leida": true
+  }
+]

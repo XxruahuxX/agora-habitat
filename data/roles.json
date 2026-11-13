@@ -1,0 +1,28 @@
+[
+  {
+    "nombre": "USUARIO_REGISTRADO",
+    "permisos": [
+      "CONSULTAR_ESTADO_PLAYA"
+    ]
+  },
+  {
+    "nombre": "SOCORRISTA",
+    "permisos": [
+      "CONSULTAR_ESTADO_PLAYA",
+      "CONSULTAR_ALERTAS_SENSORES",
+      "ACTIVAR_BANDERAS",
+      "GENERAR_ALERTAS",
+      "ABRIR_CERRAR_SOMBRILLAS"
+    ]
+  },
+  {
+    "nombre": "ADMINISTRADOR",
+    "permisos": [
+      "CONSULTAR_ESTADO_PLAYA",
+      "CONSULTAR_ALERTAS_SENSORES",
+      "GESTIONAR_RESERVAS",
+      "GESTIONAR_USUARIOS",
+      "CONFIGURAR_UMBRALES"
+    ]
+  }
+]
