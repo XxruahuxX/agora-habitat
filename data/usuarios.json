@@ -1,0 +1,49 @@
+[
+  {
+    "id": "u001",
+    "nombre": "Admin",
+    "apellidos": "Ágora Hábitat",
+    "dni": "00000000T",
+    "telefono": "600000001",
+    "correo": "admin@agorahabitat.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "ADMINISTRADOR"
+  },
+  {
+    "id": "u002",
+    "nombre": "Ana",
+    "apellidos": "Torres Vega",
+    "dni": "87654321X",
+    "telefono": "600000002",
+    "correo": "ana.torres@agorahabitat.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "SOCORRISTA",
+    "torre": "Torre 1"
+  },
+  {
+    "id": "u003",
+    "nombre": "Laura",
+    "apellidos": "García Pérez",
+    "dni": "12345678Z",
+    "telefono": "600000003",
+    "correo": "laura.garcia@correo.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": "1234BCD"
+  },
+  {
+    "id": "u004",
+    "nombre": "Marcos",
+    "apellidos": "Ruiz López",
+    "dni": "11111111H",
+    "telefono": "600000004",
+    "correo": "marcos.ruiz@correo.es",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "BLOQUEADO",
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": null
+  }
+]
