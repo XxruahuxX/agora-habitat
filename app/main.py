@@ -20,7 +20,6 @@ boton.pack(expand=True)
 
 ventana.mainloop()
 
-
 from controller.usuario_controller import UsuarioController
 
 controlador = UsuarioController()
@@ -38,21 +37,33 @@ if opcion == "1":
     resultado = controlador.login(correo, contrasena)
 
     if isinstance(resultado, dict):
+
         print("Bienvenido", resultado["nombre"])
         print("Rol:", resultado["rol"])
 
+        if resultado["rol"] == "ADMINISTRADOR":
+            import view.vista_administrador
+
+        elif resultado["rol"] == "SOCORRISTA":
+            import view.vista_socorrista
+
+        elif resultado["rol"] == "USUARIO_REGISTRADO":
+            import view.vista_usuario
+
     elif resultado == "BLOQUEADO":
+
         print("Error: usuario bloqueado")
 
     elif resultado == "CONTRASENA_INCORRECTA":
+
         print("Error: contraseña incorrecta")
 
     elif resultado == "USUARIO_NO_ENCONTRADO":
+
         print("Error: usuario no encontrado")
 
 elif opcion == "2":
 
-    id = input("ID: ")
     nombre = input("Nombre: ")
     apellidos = input("Apellidos: ")
     dni = input("DNI: ")
@@ -61,7 +72,6 @@ elif opcion == "2":
     contrasena = input("Contraseña: ")
 
     registrado = controlador.registrar_usuario(
-        id,
         nombre,
         apellidos,
         dni,
@@ -72,11 +82,13 @@ elif opcion == "2":
     )
 
     if registrado:
+
         print("Usuario registrado correctamente")
+
     else:
+
         print("Ya existe un usuario con ese correo")
 
 else:
-    print("Opción no válida")
 
-    
+    print("Opción no válida")

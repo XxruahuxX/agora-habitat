@@ -1,13 +1,15 @@
 import json
 import hashlib
+from model.repositorio_json import RepositorioJSON
 
 
 class UsuarioController:
 
-    def cargar_usuarios(self):
+    def __init__(self):
+        self.repositorio = RepositorioJSON()
 
-        with open("data/usuarios.json", "r", encoding="utf-8") as fichero:
-            return json.load(fichero)
+    def cargar_usuarios(self):
+        return self.repositorio.cargar("usuarios")
 
     def login(self, correo, contrasena):
 
@@ -33,7 +35,6 @@ class UsuarioController:
 
     def registrar_usuario(
             self,
-            id,
             nombre,
             apellidos,
             dni,
@@ -49,12 +50,14 @@ class UsuarioController:
             if usuario["correo"] == correo:
                 return False
 
+        nuevo_id = self.repositorio.siguiente_id("u")
+
         hash_contrasena = hashlib.sha256(
             contrasena.encode()
         ).hexdigest()
 
         nuevo_usuario = {
-            "id": id,
+            "id": nuevo_id,
             "nombre": nombre,
             "apellidos": apellidos,
             "dni": dni,
@@ -67,12 +70,9 @@ class UsuarioController:
 
         usuarios.append(nuevo_usuario)
 
-        with open("data/usuarios.json", "w", encoding="utf-8") as fichero:
-            json.dump(
-                usuarios,
-                fichero,
-                indent=2,
-                ensure_ascii=False
-            )
+        self.repositorio.guardar(
+            "usuarios",
+            usuarios
+        )
 
         return True

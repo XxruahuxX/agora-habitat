@@ -56,5 +56,27 @@
     "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
     "estado": "ACTIVO",
     "rol": "USUARIO_REGISTRADO"
+  },
+  {
+    "id": "u006",
+    "nombre": "Prueba",
+    "apellidos": "Prueba1",
+    "dni": "123456789",
+    "telefono": "123456789",
+    "correo": "prueba@gmail.com",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO"
+  },
+  {
+    "id": "u007",
+    "nombre": "prueba2",
+    "apellidos": "prueba222",
+    "dni": "22222222",
+    "telefono": "22222222",
+    "correo": "22222@gmail.com",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO"
   }
 ]
