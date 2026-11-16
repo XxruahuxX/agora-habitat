@@ -19,7 +19,6 @@ boton = tk.Button(
 boton.pack(expand=True)
 
 ventana.mainloop()
-
 from controller.usuario_controller import UsuarioController
 
 controlador = UsuarioController()
@@ -31,10 +30,10 @@ opcion = input("Elige una opción: ")
 
 if opcion == "1":
 
-    correo = input("Correo: ")
+    identificador = input("Correo o DNI: ")
     contrasena = input("Contraseña: ")
 
-    resultado = controlador.login(correo, contrasena)
+    resultado = controlador.login(identificador,contrasena)
 
     if isinstance(resultado, dict):
 
@@ -68,6 +67,7 @@ elif opcion == "2":
     apellidos = input("Apellidos: ")
     dni = input("DNI: ")
     telefono = input("Teléfono: ")
+    matricula = input("Matrícula (opcional): ")
     correo = input("Correo: ")
     contrasena = input("Contraseña: ")
 
@@ -78,12 +78,21 @@ elif opcion == "2":
         telefono,
         correo,
         contrasena,
-        "USUARIO_REGISTRADO"
+        "USUARIO_REGISTRADO",
+        matricula if matricula != "" else None
     )
 
-    if registrado:
+    if registrado == True:
 
         print("Usuario registrado correctamente")
+
+    elif registrado == "DNI_INVALIDO":
+
+        print("Error: el DNI debe tener 8 números y una letra")
+
+    elif registrado == "TELEFONO_INVALIDO":
+
+        print("Error: el teléfono debe tener 9 dígitos")
 
     else:
 

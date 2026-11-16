@@ -1,4 +1,3 @@
-import json
 import hashlib
 from model.repositorio_json import RepositorioJSON
 
@@ -11,7 +10,33 @@ class UsuarioController:
     def cargar_usuarios(self):
         return self.repositorio.cargar("usuarios")
 
-    def login(self, correo, contrasena):
+    def validar_dni(self, dni):
+
+        if len(dni) != 9:
+            return False
+
+        numeros = dni[:8]
+        letra = dni[8]
+
+        if not numeros.isdigit():
+            return False
+
+        if not letra.isalpha():
+            return False
+
+        return True
+
+    def validar_telefono(self, telefono):
+
+        if len(telefono) != 9:
+            return False
+
+        if not telefono.isdigit():
+            return False
+
+        return True
+
+    def login(self, identificador, contrasena):
 
         usuarios = self.cargar_usuarios()
 
@@ -21,7 +46,10 @@ class UsuarioController:
 
         for usuario in usuarios:
 
-            if usuario["correo"] == correo:
+            if (
+                usuario["correo"] == identificador
+                or usuario["dni"] == identificador
+            ):
 
                 if usuario["estado"] != "ACTIVO":
                     return "BLOQUEADO"
@@ -41,7 +69,14 @@ class UsuarioController:
             telefono,
             correo,
             contrasena,
-            rol):
+            rol,
+            matricula=None):
+
+        if not self.validar_dni(dni):
+            return "DNI_INVALIDO"
+
+        if not self.validar_telefono(telefono):
+            return "TELEFONO_INVALIDO"
 
         usuarios = self.cargar_usuarios()
 
@@ -65,7 +100,8 @@ class UsuarioController:
             "correo": correo,
             "contrasena_hash": hash_contrasena,
             "estado": "ACTIVO",
-            "rol": rol
+            "rol": rol,
+            "matricula": matricula
         }
 
         usuarios.append(nuevo_usuario)
