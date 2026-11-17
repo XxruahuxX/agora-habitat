@@ -93,5 +93,17 @@
     "estado": "ACTIVO",
     "rol": "USUARIO_REGISTRADO",
     "matricula": "1234PLK"
+  },
+  {
+    "id": "u009",
+    "nombre": "ter",
+    "apellidos": "tere",
+    "dni": "12232323I",
+    "telefono": "234432123",
+    "correo": "tere@gmail.com",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": null
   }
 ]

@@ -67,7 +67,19 @@ elif opcion == "2":
     apellidos = input("Apellidos: ")
     dni = input("DNI: ")
     telefono = input("Teléfono: ")
-    matricula = input("Matrícula (opcional): ")
+
+    respuesta = input(
+        "¿Desea registrar una matrícula para el aparcamiento? (S/N): "
+    ).upper()
+
+    if respuesta == "S":
+
+        matricula = input("Matrícula: ")
+
+    else:
+
+        matricula = None
+
     correo = input("Correo: ")
     contrasena = input("Contraseña: ")
 
@@ -79,7 +91,7 @@ elif opcion == "2":
         correo,
         contrasena,
         "USUARIO_REGISTRADO",
-        matricula if matricula != "" else None
+        matricula
     )
 
     if registrado == True:
