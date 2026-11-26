@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p01",
+    "estado": "RESERVADA"
+  },
+  {
+    "id": "p02",
+    "estado": "LIBRE"
+  },
+  {
+    "id": "p03",
+    "estado": "OCUPADA"
+  },
+  {
+    "id": "p04",
+    "estado": "LIBRE"
+  }
+]
