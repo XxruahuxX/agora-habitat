@@ -25,9 +25,8 @@ playa_controller = PlayaController( repo,  sombrilla_controller,farola_controlle
 
 
 
+
 # Funciones
-
-
 def iniciar_proyecto():
 
     try:
