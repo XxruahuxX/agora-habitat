@@ -55,7 +55,8 @@
     "correo": "hector.munoz@correo.es",
     "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
     "estado": "ACTIVO",
-    "rol": "USUARIO_REGISTRADO"
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": null
   },
   {
     "id": "u006",
@@ -66,7 +67,8 @@
     "correo": "prueba@gmail.com",
     "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
     "estado": "ACTIVO",
-    "rol": "USUARIO_REGISTRADO"
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": null
   },
   {
     "id": "u007",
@@ -77,6 +79,31 @@
     "correo": "22222@gmail.com",
     "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
     "estado": "ACTIVO",
-    "rol": "USUARIO_REGISTRADO"
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": null
+  },
+  {
+    "id": "u008",
+    "nombre": "mario",
+    "apellidos": "mariomarito",
+    "dni": "12344321W",
+    "telefono": "123343456",
+    "correo": "mario@gmail.com",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": "1234PLK"
+  },
+  {
+    "id": "u009",
+    "nombre": "ter",
+    "apellidos": "tere",
+    "dni": "12232323I",
+    "telefono": "234432123",
+    "correo": "tere@gmail.com",
+    "contrasena_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "estado": "ACTIVO",
+    "rol": "USUARIO_REGISTRADO",
+    "matricula": null
   }
 ]

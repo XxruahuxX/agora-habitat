@@ -46,5 +46,16 @@
     "hora_prevista": "11:00",
     "hora_real": null,
     "hora_salida": null
+  },
+  {
+    "id": "r005",
+    "tipo": "SOMBRILLA",
+    "usuario_id": "u003",
+    "dia": "2026-11-27",
+    "estado": "PENDIENTE",
+    "fecha_creacion": "2026-11-27T13:18:18",
+    "sombrilla_id": "s01",
+    "desde": "10:00",
+    "hasta": "20:00"
   }
 ]
