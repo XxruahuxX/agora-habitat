@@ -1,4 +1,4 @@
-from app.model.farola import Farola
+from model.farola import Farola
 
 class FarolaController:
 

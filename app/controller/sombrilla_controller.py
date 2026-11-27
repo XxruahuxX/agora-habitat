@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from datetime import date, datetime
 
-from app.model.repositorio_json import RepositorioJSON
-from app.model.sombrilla import Sombrilla
+from model.repositorio_json import RepositorioJSON
+from model.sombrilla import Sombrilla
 
 
 class SombrillaController:

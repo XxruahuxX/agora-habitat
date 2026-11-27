@@ -1,115 +1,165 @@
 import tkinter as tk
 from tkinter import messagebox
+
+from model.repositorio_json import RepositorioJSON
+
 from controller.usuario_controller import UsuarioController
+from controller.sombrilla_controller import SombrillaController
+from controller.farola_controller import FarolaController
+from controller.playa_controller import PlayaController
 
-def iniciar_proyecto():
-    messagebox.showinfo("Proyecto", "¡Inicio del proyecto!")
 
+# =====================================
+# Inicialización
+# =====================================
 
-ventana = tk.Tk()
-ventana.title("Ágora Habitat")
-ventana.geometry("400x200")
+repo = RepositorioJSON()
 
-boton = tk.Button(
-    ventana,
-    text="Iniciar Proyecto",
-    command=iniciar_proyecto
+usuario_controller = UsuarioController()
+
+sombrilla_controller = SombrillaController(repo)
+
+farola_controller = FarolaController(repo)
+
+playa_controller = PlayaController(
+    repo,
+    sombrilla_controller,
+    farola_controller
 )
 
-boton.pack(expand=True)
+
+# =====================================
+# Funciones
+# =====================================
+
+def iniciar_proyecto():
+
+    try:
+        luz = playa_controller.evaluar_luz()
+        viento = playa_controller.evaluar_viento()
+
+        messagebox.showinfo(
+            "Ágora Habitat",
+            f"Proyecto iniciado correctamente\n\n"
+            f"Luz: {luz} lux\n"
+            f"Viento: {viento} km/h"
+        )
+
+    except Exception as e:
+        messagebox.showerror(
+            "Error",
+            str(e)
+        )
+
+
+def iniciar_sesion():
+
+    ventana_login = tk.Toplevel(ventana)
+    ventana_login.title("Iniciar sesión")
+    ventana_login.geometry("350x250")
+
+    tk.Label(
+        ventana_login,
+        text="Correo o DNI"
+    ).pack(pady=5)
+
+    entrada_usuario = tk.Entry(
+        ventana_login
+    )
+    entrada_usuario.pack()
+
+    tk.Label(
+        ventana_login,
+        text="Contraseña"
+    ).pack(pady=5)
+
+    entrada_contrasena = tk.Entry(
+        ventana_login,
+        show="*"
+    )
+    entrada_contrasena.pack()
+
+    def validar():
+
+        identificador = entrada_usuario.get()
+        contrasena = entrada_contrasena.get()
+
+        resultado = usuario_controller.login(
+            identificador,
+            contrasena
+        )
+
+        if isinstance(resultado, dict):
+
+            messagebox.showinfo(
+                "Bienvenido",
+                f"Usuario: {resultado['nombre']}\n"
+                f"Rol: {resultado['rol']}"
+            )
+
+        elif resultado == "BLOQUEADO":
+
+            messagebox.showerror(
+                "Error",
+                "Usuario bloqueado"
+            )
+
+        elif resultado == "CONTRASENA_INCORRECTA":
+
+            messagebox.showerror(
+                "Error",
+                "Contraseña incorrecta"
+            )
+
+        else:
+
+            messagebox.showerror(
+                "Error",
+                "Usuario no encontrado"
+            )
+
+    tk.Button(
+        ventana_login,
+        text="Acceder",
+        command=validar
+    ).pack(pady=15)
+
+
+# =====================================
+# Ventana principal
+# =====================================
+
+ventana = tk.Tk()
+
+ventana.title("Ágora Habitat")
+
+ventana.geometry("450x300")
+
+tk.Label(
+    ventana,
+    text="Ágora Habitat",
+    font=("Arial", 18, "bold")
+).pack(pady=20)
+
+tk.Button(
+    ventana,
+    text="Iniciar Proyecto",
+    width=20,
+    command=iniciar_proyecto
+).pack(pady=10)
+
+tk.Button(
+    ventana,
+    text="Iniciar Sesión",
+    width=20,
+    command=iniciar_sesion
+).pack(pady=10)
+
+tk.Button(
+    ventana,
+    text="Salir",
+    width=20,
+    command=ventana.destroy
+).pack(pady=10)
 
 ventana.mainloop()
-from controller.usuario_controller import UsuarioController
-
-controlador = UsuarioController()
-
-print("1. Iniciar sesión")
-print("2. Registrarse")
-
-opcion = input("Elige una opción: ")
-
-if opcion == "1":
-
-    identificador = input("Correo o DNI: ")
-    contrasena = input("Contraseña: ")
-
-    resultado = controlador.login(identificador,contrasena)
-
-    if isinstance(resultado, dict):
-
-        print("Bienvenido", resultado["nombre"])
-        print("Rol:", resultado["rol"])
-
-        if resultado["rol"] == "ADMINISTRADOR":
-            import view.vista_administrador
-
-        elif resultado["rol"] == "SOCORRISTA":
-            import view.vista_socorrista
-
-        elif resultado["rol"] == "USUARIO_REGISTRADO":
-            import view.vista_usuario
-
-    elif resultado == "BLOQUEADO":
-
-        print("Error: usuario bloqueado")
-
-    elif resultado == "CONTRASENA_INCORRECTA":
-
-        print("Error: contraseña incorrecta")
-
-    elif resultado == "USUARIO_NO_ENCONTRADO":
-
-        print("Error: usuario no encontrado")
-
-elif opcion == "2":
-
-    nombre = input("Nombre: ")
-    apellidos = input("Apellidos: ")
-    dni = input("DNI: ")
-    telefono = input("Teléfono: ")
-
-    respuesta = input(
-        "¿Desea registrar una matrícula para el aparcamiento? (S/N): "
-    ).upper()
-
-    if respuesta == "S":
-
-        matricula = input("Matrícula: ")
-
-    else:
-
-        matricula = None
-
-    correo = input("Correo: ")
-    contrasena = input("Contraseña: ")
-
-    registrado = controlador.registrar_usuario(
-        nombre,
-        apellidos,
-        dni,
-        telefono,
-        correo,
-        contrasena,
-        "USUARIO_REGISTRADO",
-        matricula
-    )
-
-    if registrado == True:
-
-        print("Usuario registrado correctamente")
-
-    elif registrado == "DNI_INVALIDO":
-
-        print("Error: el DNI debe tener 8 números y una letra")
-
-    elif registrado == "TELEFONO_INVALIDO":
-
-        print("Error: el teléfono debe tener 9 dígitos")
-
-    else:
-
-        print("Ya existe un usuario con ese correo")
-
-else:
-
-    print("Opción no válida")

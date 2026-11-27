@@ -3,12 +3,12 @@ from __future__ import annotations
 
 from datetime import date, datetime
 
-from app.controller.sombrilla_controller import SombrillaController
-from app.model.repositorio_json import RepositorioJSON
-from app.model.sensor_viento import SensorViento
+from controller.sombrilla_controller import SombrillaController
+from model.repositorio_json import RepositorioJSON
+from model.sensor_viento import SensorViento
 
-from app.controller.farola_controller import FarolaController
-from app.model.sensor_luz import SensorLuz
+from controller.farola_controller import FarolaController
+from model.sensor_luz import SensorLuz
 
 class PlayaController:
     SENSOR_VIENTO_ID = "se01"

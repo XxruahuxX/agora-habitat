@@ -2,7 +2,7 @@
   {
     "id": "se01",
     "tipo": "VIENTO",
-    "ultima_lectura": "2026-11-13T10:00:00"
+    "ultima_lectura": "2026-11-27T11:31:58"
   },
   {
     "id": "se02",
@@ -20,6 +20,6 @@
     "id": "se04",
     "tipo": "LUZ",
     "farola_id": "f01",
-    "ultima_lectura": "2026-11-13T10:00:00"
+    "ultima_lectura": "2026-11-27T11:31:58"
   }
 ]
